@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <nav class="main-nav">
+        <button class="btn main-nav__btn" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a>Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Фото и видео</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a href="#">Форма отзыва</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Html academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <img class="logo" src="#" width="102" height="83" alt="Логотип Седона">
+      <img class="invitation" src="#" width="230" height="40" alt="Sedona">
+    </header>
+    <main class="page-main">
+      <section class="section section--form">
+        <h1 class="section__title">Оставьте свой отзыв</h1>
+        <p class="section__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        <form class="review" method="get">
+          <fieldset class="full-name">
+            <legend class="legend">Представьтесь:</legend>
+            <ul class="full-name__list">
+              <li class="full-name__item">
+                <label>Имя*:
+                  <input class="full-name__field" type="text" name="name" placeholder="Петр">
+                </label>
+              </li>
+              <li class="full-name__item">
+                <label>Фамилия*:
+                  <input class="full-name__field" type="text" name="surname" placeholder="Иванов">
+                </label>
+              </li>
+              <li class="full-name__item">
+                <label>Отчество:
+                  <input class="full-name__field" type="text" name="patronymic" placeholder="Александрович">
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="contact-information">
+            <legend class="legend">Контактная информация:</legend>
+            <ul class="contact-information__list">
+              <li class="contact-information__item">
+                <label for="phone">Контактный телефон*:</label>
+                <input class="contact-information__phone" id="phone" type="text" name="phone" placeholder="Введите телефон">
+              </li>
+              <li class="contact-information__item">
+                <label for="email">Электронная почта*:</label>
+                <input class="contact-information__email" id="email" type="text" name="email" placeholder="Введите e-mail">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="your-impression">
+            <legend class="legend">Ваше Общее впечатление:</legend>
+            <ul class="your-impression__list">
+              <li class="your-impression__item">
+                <label>
+                  <input class="your-impression__choice" type="radio" name="impression" value="Скорее положительное" checked>
+                  Скорее положительное
+                </label>
+              </li>
+              <li class="your-impression__item">
+                <label>
+                  <input class="your-impression__choice" type="radio" name="impression" value="Скорее отрицательное">
+                  Скорее отрицательное
+                </label>
+              </li>
+              <li class="your-impression__item">
+                <label>
+                  <input class="your-impression__choice" type="radio" name="impression" value="Затрудняюсь ответить">
+                  Затрудняюсь ответить
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="visited-sights">
+            <legend class="legend">Посещенные достопримечательности:</legend>
+            <ul class="visited-sights__list">
+              <li class="visited-sights__item">
+                <label>
+                  <input class="visited-sights__choice" type="checkbox" name="sights" value="Мост Дьявола" checked>
+                  Мост Дьявола
+                </label>
+              </li>
+              <li class="visited-sights__item">
+                <label>
+                  <input class="visited-sights__choice" type="checkbox" name="sights" value="Гора-Колокол" checked>
+                  Гора-Колокол
+                </label>
+              </li>
+              <li class="visited-sights__item">
+                <label>
+                  <input class="visited-sights__choice" type="checkbox" name="sights"   value="Слайд-парк" checked>
+                  Слайд-парк
+                </label>
+              </li>
+              <li class="visited-sights__item">
+                <label>
+                  <input class="visited-sights__choice" type="checkbox" name="sights" value="Красные скалы">
+                  Красные скалы
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="your-emotions">
+            <legend class="legend">Опишите свои эмоции:</legend>
+            <input class="your-emotions__text" type="text" name="your emotions">
+          </fieldset>
+          <button class="btn review__btn" type="submit">Отправить отзыв</button>
+        </form>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <p class="page-footer__hashtag">#visitsedona</p>
+      <div class="page-footer__link social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#"><span class="visually-hidden">Твиттер</span></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#"><span class="visually-hidden">Фейсбук</span></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="#"><span class="visually-hidden">Ютуб</span></a>
+          </li>
+        </ul>
+      </div>
+      <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
+    </footer>
+  </body>
+</html>
