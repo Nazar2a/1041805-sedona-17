@@ -2,22 +2,23 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page-body">
     <div class="page-body__wrapper">
-      <header class="page-header">
+      <header class="page-header page-header--photo">
         <nav class="main-nav">
           <button class="main-nav__button" type="button" aria-label="Открыть меню"></button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
               <li class="site-list__item site-list__item--active">
-                <a class="site-list__link">Главная</a>
+                <a class="site-list__link href="#"">Главная</a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link" href="#">Фото и видео</a>
+                <a class="site-list__link">Фото и видео</a>
               </li>
               <li class="site-list__item">
                 <a class="site-list__link" href="#">Форма отзыва</a>
@@ -28,9 +29,9 @@
             </ul>
           </div>
         </nav>
-        <img class="page-header__logo" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип Седона">
-        <div class="page-header__invitation">
-          <img class="page-header__invitation-img page-header__invitation-img--small" src="img/sedona.svg" width="229" height="39" alt="Sedona">
+        <div class="page-header__logo"></div>
+        <div class="page-header__invitation page-header__invitation--photo">
+          <img class="page-header__invitation-img" src="img/sedona.svg" width="229" height="39" alt="Sedona">
         </div>
       </header>
       <main class="page-main gallery">
@@ -41,34 +42,66 @@
           <ul class="gallery__list">
             <li class="gallery__item">
               <div class="card-photo">
-                <img class="card-photo__photo" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Народные просторы">
-                <h3 class="card-photo__title">Народные просторы</h3>
-                <p class="card-photo__author">Автор фото: Борис</p>
-                <a class="card-photo__like" href="#">1350</a>
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg">
+                  <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg">
+                  <img class="card-photo__photo card-photo__photo--first" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Народные просторы">
+                </picture>
+                <div class="card-photo__description card-photo__description--first">
+                  <div class="card-photo__wrapper">
+                    <h3 class="card-photo__title">Народные просторы</h3>
+                    <p class="card-photo__author">Автор фото: Борис</p>
+                  </div>
+                  <a class="card-photo__like" href="#">1350</a>
+                </div>
               </div>
             </li>
             <li class="gallery__item">
               <div class="card-photo">
-                <img class="card-photo__photo" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Местная растительность">
-                <h3 class="card-photo__title">Местная растительность</h3>
-                <p class="card-photo__author">Автор фото: Сергей</p>
-                <a class="card-photo__like" href="#">143</a>
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg">
+                  <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg">
+                  <img class="card-photo__photo" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Местная растительность">
+                </picture>
+                <div class="card-photo__description">
+                  <div class="card-photo__wrapper">
+                    <h3 class="card-photo__title">Местная растительность</h3>
+                    <p class="card-photo__author">Автор фото: Сергей</p>
+                  </div>
+                  <a class="card-photo__like" href="#">143</a>
+                </div>
               </div>
             </li>
             <li class="gallery__item">
               <div class="card-photo">
-                <img class="card-photo__photo" src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Дорога на север">
-                <h3 class="card-photo__title">Дорога на север</h3>
-                <p class="card-photo__author">Автор фото: Петр</p>
-                <a class="card-photo__like" href="#">96</a>
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg">
+                  <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg">
+                  <img class="card-photo__photo" src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Дорога на север">
+                </picture>
+                <div class="card-photo__description">
+                  <div class="card-photo__wrapper">
+                    <h3 class="card-photo__title">Дорога на север</h3>
+                    <p class="card-photo__author">Автор фото: Петр</p>
+                  </div>
+                  <a class="card-photo__like" href="#">96</a>
+                </div>
               </div>
             </li>
             <li class="gallery__item">
               <div class="card-photo">
-                <img class="card-photo__photo" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Мост Дьявола">
-                <h3 class="card-photo__title">Мост Дьявола</h3>
-                <p class="card-photo__author">Автор фото: Антон</p>
-                <a class="card-photo__like" href="#">254</a>
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg">
+                  <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg">
+                  <img class="card-photo__photo" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Мост Дьявола">
+                </picture>
+                <div class="card-photo__description">
+                  <div class="card-photo__wrapper">
+                    <h3 class="card-photo__title">Мост Дьявола</h3>
+                    <p class="card-photo__author">Автор фото: Антон</p>
+                  </div>
+                  <a class="card-photo__like" href="#">254</a>
+                </div>
               </div>
             </li>
           </ul>
@@ -102,7 +135,7 @@
           </ul>
         </div>
         <a class="page-footer__developer-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
-      </footer>
-    </div>
-  </body>
-</html>
+        </footer>
+        </div>
+      </body>
+    </html>

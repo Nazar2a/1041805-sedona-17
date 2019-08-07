@@ -1,5 +1,42 @@
 .gallery__list {
   list-style: none;
   padding: 0;
-  margin: 0 20px 0 20px;
+  margin: 30px 20px 49px 20px;
+}
+
+.gallery__item {
+  margin-bottom: 17px;
+}
+
+@media (min-width: @tablet-width) {
+  .gallery__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    margin-top: 68px;
+
+
+    .gallery__item {
+      width: 324px;
+      margin-bottom: 0;
+    }
+
+    .gallery__item:first-child {
+      width: 648px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .gallery__list {
+    margin-top: 70px;
+
+    .gallery__item {
+      width: 400px;
+    }
+
+    .gallery__item:first-child {
+      width: 1200px;
+    }
+  }
 }

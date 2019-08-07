@@ -1,25 +1,137 @@
 .section__title {
   color: #000000;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 26px;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
-  margin: 42px 20px 27px 20px;
+  margin: 40px 30px 29px 30px;
 }
 
 .section__description {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
-  margin: 3px 20px 8px 20px;
+  margin: 5px 20px 8px 20px;
+}
+
+.section--photo {
+  .section__description {
+    line-height: 23px;
+    margin: 3px 25px 8px 25px;
+  }
+}
+
+.section--video {
+  .section__description {
+    line-height: 23px;
+    margin: 3px 25px 8px 25px;
+  }
 }
 
 .section--hotel-search {
   .section__title {
-    font-size: 18px;
+    font-size: 21px;
     margin-top: 25px;
     margin-bottom: 19px;
+  }
+
+  .section__description {
+    line-height: 24px;
+    margin-bottom: 36px;
+  }
+
+  .map {
+    margin-top: 48px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .section__title {
+    width: 490px;
+    font-size: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 52px auto 29px auto;
+  }
+
+  .section__description {
+    font-size: 14px;
+    letter-spacing: 0.45px;
+    margin: 5px 20px 8px 20px;
+  }
+
+  .section--hotel-search {
+    .section__title {
+      font-size: 30px;
+      margin-top: 56px;
+      margin-bottom: 33px;
+    }
+
+    .section__description {
+      width: 440px;
+      margin: 0 auto;
+      line-height: 24px;
+      margin-bottom: 41px;
+    }
+
+    .map {
+      margin-top: 59px;
+      width: @tablet-width;
+    }
+  }
+
+  .section--photo,
+  .section--video {
+    width: 648px;
+    margin: 0 60px 0 60px;
+
+    .section__title {
+      font-size: 30px;
+      margin-top: 73px;
+      margin-bottom: 33px;
+    }
+
+    .section__description {
+      width: 470px;
+      line-height: 24px;
+      margin: 0 auto;
+    }
+  }
+
+  .section--video {
+    .section__title {
+      margin-top: 64px;
+    }
+
+    .section__description {
+      width: 450px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .section--hotel-search {
+    .section__description {
+      margin-bottom: 44px;
+    }
+
+    .map {
+      margin-top: 67px;
+      width: @desktop-width;
+    }
+  }
+
+  .section--photo,
+  .section--video {
+    width: @desktop-width;
+    margin: 0;
+  }
+
+  .section--video {
+    .section__title {
+      margin-top: 70px;
+    }
   }
 }
