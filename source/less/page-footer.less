@@ -5,7 +5,7 @@
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
-  margin: 40px 0 40px 0;
+  margin: 36px 0 35px 0;
 }
 
 .page-footer__developer-link {
@@ -14,7 +14,36 @@
   line-height: 26px;
   text-decoration: none;
   text-transform: uppercase;
-  margin: 20px 0 33px 93px;
+  margin: 40px 0 33px 94px;
   color: #000000;
   display: block;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-footer__hashtag {
+    margin: 45px 0 35px 59px;
+  }
+
+  .page-footer__link {
+    margin: 17px 80px 35px 0;
+  }
+
+  .page-footer__developer-link {
+    margin: 46px 101px 35px 10px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__hashtag {
+    margin-left: 120px;
+  }
+
+  .page-footer__developer-link {
+    margin-right: 160px;
+  }
 }

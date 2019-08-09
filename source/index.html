@@ -2,8 +2,8 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Седона</title>
-    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page-body">
@@ -17,13 +17,13 @@
                 <a class="site-list__link">Главная</a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link" href="#">Фото и видео</a>
+                <a class="site-list__link" href="photo.html">Фото и видео</a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link" href="#">Форма отзыва</a>
+                <a class="site-list__link" href="form.html">Форма отзыва</a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link" href="#">Html academy</a>
+                <a class="site-list__link" href="https://htmlacademy.ru">Html academy</a>
               </li>
             </ul>
           </div>
@@ -39,52 +39,70 @@
           <h2 class="section__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
           <p class="section__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
           <div class="advantage advantage--god-city">
-            <h3 class="advantage__title">Настоящий городок</h3>
-            <p class="advantage__number">— №1 —</p>
-            <p class="advantage__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
-            <img class="advantage__img" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Фото города">
+            <div class="advantage__wrapper">
+              <h3 class="advantage__title">Настоящий городок</h3>
+              <p class="advantage__number">— №1 —</p>
+              <p class="advantage__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+            </div>
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg">
+              <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg">
+              <img class="advantage__img" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Фото города">
+            </picture>
           </div>
-          <div class="service-wrapper">
-            <div class="service service--home">
+          <div class="service">
+            <div class="service__home">
               <h2 class="service__title">Жилье</h2>
               <p class="service__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </div>
-            <div class="service service--souvenirs">
+            <div class="service__souvenirs">
               <h2 class="service__title">Сувениры</h2>
               <p class="service__description">Не только китайского, но и местного производства!</p>
             </div>
-            <div class="service service--food">
+            <div class="service__food">
               <h2 class="service__title">Еда</h2>
               <p class="service__description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
             </div>
           </div>
           <div class="advantage advantage--bridge">
-            <h3 class="advantage__title">Там есть мост Дьявола</h3>
-            <p class="advantage__number">— №2 —</p>
-            <p class="advantage__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-            <img class="advantage__img" src="img/photo-bridge-mobile@1x.jpg" width="320" height="260" alt="Фото - мост Дьявола">
+            <div class="advantage__wrapper">
+              <h3 class="advantage__title">Там есть мост Дьявола</h3>
+              <p class="advantage__number">— №2 —</p>
+              <p class="advantage__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            </div>
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg">
+              <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg">
+              <img class="advantage__img" src="img/photo-bridge-mobile@1x.jpg" width="320" height="260" alt="Фото - мост Дьявола">
+            </picture>
           </div>
-          <div class="advantage advantage--square">
-            <h3 class="advantage__title">Небольшая площадь</h3>
-            <p class="advantage__number">— №3 —</p>
-            <p class="advantage__description">Все интересные места находятся очень близко</p>
-          </div>
-          <div class="advantage advantage--road">
-            <h3 class="advantage__title">Красивая дорога</h3>
-            <p class="advantage__number">— №4 —</p>
-            <p class="advantage__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </div>
-          <div class="advantage advantage--tourists">
-            <h3 class="advantage__title">Мало туристов</h3>
-            <p class="advantage__number">— №5 —</p>
-            <p class="advantage__description">Большинство едет в Гранд каньон и толпится там</p>
+          <div class="advantage__without-img-wrapper">
+            <div class="advantage advantage--square">
+              <h3 class="advantage__title">Небольшая площадь</h3>
+              <p class="advantage__number">— №3 —</p>
+              <p class="advantage__description">Все интересные места находятся очень близко</p>
+            </div>
+            <div class="advantage advantage--road">
+              <h3 class="advantage__title">Красивая дорога</h3>
+              <p class="advantage__number">— №4 —</p>
+              <p class="advantage__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </div>
+            <div class="advantage advantage--tourists">
+              <h3 class="advantage__title">Мало туристов</h3>
+              <p class="advantage__number">— №5 —</p>
+              <p class="advantage__description">Большинство едет в Гранд каньон и толпится там</p>
+            </div>
           </div>
         </section>
         <section class="section section--hotel-search">
           <h2 class="section__title">Заинтересовались?</h2>
           <p class="section__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <a class="btn btn-hotel-search" href="#">Найти гостиницу</a>
-          <img class="map" src="img/bg-map-mobile@1x.jpg" width="320" height="350" alt="карта гостиниц">
+          <a class="btn" href="#">Найти гостиницу</a>
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg">
+            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg">
+            <img class="map" src="img/bg-map-mobile@1x.jpg" width="320" height="350" alt="карта гостиниц">
+          </picture>
         </section>
       </main>
       <footer class="page-footer">

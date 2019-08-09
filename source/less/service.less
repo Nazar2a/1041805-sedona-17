@@ -1,4 +1,10 @@
-.service-wrapper {
+.service__home,
+.service__souvenirs,
+.service__food {
+  position: relative;
+}
+
+.service {
   margin-top: 21px;
   margin-bottom: 15px;
 }
@@ -8,16 +14,128 @@
   line-height: 26px;
   font-weight: bold;
   margin: 0;
-  padding: 9px 10px 5px 67px;
+  padding: 9px 10px 5px 69px;
   text-transform: uppercase;
 }
 
 
 .service__description {
   font-size: 14px;
-  line-height: 21px;
+  lifne-height: 21px;
   margin: 0;
   color: #333333;
-  padding: 10px 10px 20px 69px;
+  padding: 10px 20px 20px 69px;
   text-transform: uppercase;
+}
+
+.service__home .service__title::after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 22px;
+  background-size: contain;
+  width: 37px;
+  height: 36px;
+  background-image: url("../img/icon-house.svg");
+}
+
+.service__souvenirs .service__title::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 24px;
+  background-size: contain;
+  width: 32px;
+  height: 38px;
+  background-image: url("../img/icon-gift.svg");
+}
+
+.service__food .service__title::after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 20px;
+  background-size: contain;
+  width: 40px;
+  height: 35px;
+  background-image: url("../img/icon-burger.svg");
+}
+
+@media (min-width: @tablet-width) {
+  .service {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .service__home,
+  .service__souvenirs,
+  .service__food {
+    width: 256px;
+  }
+
+  .service__title {
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+    padding: 135px 10px 5px 9px;
+  }
+
+  .service__description {
+    text-align: center;
+    width: 165px;
+    padding: 0;
+    margin: 0 auto;
+    padding-top: 18px;
+    padding-bottom: 46px;
+  }
+
+  .service__souvenirs {
+    order: 2;
+  }
+
+  .service__home .service__title::after {
+    top: 37px;
+    left: 90px;
+    width: 75px;
+    height: 72px;
+  }
+
+  .service__souvenirs .service__title::after {
+    top: 35px;
+    left: 95px;
+    width: 64px;
+    height: 75px;
+  }
+
+  .service__food .service__title::after {
+    top: 40px;
+    left: 90px;
+    width: 77px;
+    height: 68px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .service__home,
+  .service__souvenirs,
+  .service__food {
+    width: 400px;
+  }
+
+  .service__description {
+    width: 288px;
+    padding-bottom: 65px;
+  }
+
+  .service__home .service__title::after {
+    left: 161px;
+  }
+
+  .service__souvenirs .service__title::after {
+    left: 168px;
+  }
+
+  .service__food .service__title::after {
+    left: 162px;
+  }
 }

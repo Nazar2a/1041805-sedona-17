@@ -1,12 +1,24 @@
 .btn {
   display: block;
+  box-sizing: border-box;
+  width: 280px;
+  height: 58px;
+  padding-top: 15px;
+  margin: 0 auto;
+  text-align: center;
   text-transform: uppercase;
-  padding: 17px 35px 17px 35px;
-  margin: 40px 20px 50px 20px;
+
+
   border: none;
   color: #ffffff;
   font-size: 21px;
   font-weight: bold;
   background-color: #81b3d2;
   text-decoration: none;
+}
+
+@media (min-width: @tablet-width) {
+  .btn {
+    width: 458px;
+  }
 }

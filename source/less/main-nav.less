@@ -3,18 +3,20 @@
   text-transform: uppercase;
 }
 
-.main-nav__button {
-  position: absolute;
-  top: 10px;
-  right: 19px;
-  font-size: 0;
-  width: 22px;
-  height: 22px;
-  background-color: transparent;
-  cursor: pointer;
-  padding: 15px 15px;
-  border: 0;
-  z-index: 3;
+@media (max-width: @tablet-width) {
+  .main-nav__button {
+    position: absolute;
+    top: 10px;
+    right: 19px;
+    font-size: 0;
+    width: 22px;
+    height: 22px;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 15px 15px;
+    border: 0;
+    z-index: 3;
+  }
 }
 
 .main-nav__button::before,
@@ -39,4 +41,10 @@
 .main-nav__list {
   padding: 0;
   margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__button {
+    display: none;
+  }
 }
