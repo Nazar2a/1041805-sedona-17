@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Седона</title>
-    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page-body">
@@ -18,13 +17,13 @@
                 <a class="site-list__link">Главная</a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link" href="#">Фото и видео</a>
+                <a class="site-list__link" href="photo.html">Фото и видео</a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link" href="#">Форма отзыва</a>
+                <a class="site-list__link" href="form.html">Форма отзыва</a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link" href="#">Html academy</a>
+                <a class="site-list__link" href="https://htmlacademy.ru">Html academy</a>
               </li>
             </ul>
           </div>
@@ -51,16 +50,16 @@
               <img class="advantage__img" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Фото города">
             </picture>
           </div>
-          <div class="service-wrapper">
-            <div class="service service--home">
+          <div class="service">
+            <div class="service__home">
               <h2 class="service__title">Жилье</h2>
               <p class="service__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </div>
-            <div class="service service--souvenirs">
+            <div class="service__souvenirs">
               <h2 class="service__title">Сувениры</h2>
               <p class="service__description">Не только китайского, но и местного производства!</p>
             </div>
-            <div class="service service--food">
+            <div class="service__food">
               <h2 class="service__title">Еда</h2>
               <p class="service__description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
             </div>
@@ -100,29 +99,29 @@
           <p class="section__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <a class="btn" href="#">Найти гостиницу</a>
           <picture>
-              <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg">
-              <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg">
-              <img class="map" src="img/bg-map-mobile@1x.jpg" width="320" height="350" alt="карта гостиниц">
-            </picture>
+            <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg">
+            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg">
+            <img class="map" src="img/bg-map-mobile@1x.jpg" width="320" height="350" alt="карта гостиниц">
+          </picture>
         </section>
-        </main>
-        <footer class="page-footer">
-          <p class="page-footer__hashtag">#visitsedona</p>
-          <div class="page-footer__link social">
-            <ul class="social__list">
-              <li class="social__item">
-                <a class="social__link social__link--twitter" href="#"><span class="visually-hidden">Твиттер</span></a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--facebook" href="#"><span class="visually-hidden">Фейсбук</span></a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--youtube" href="#"><span class="visually-hidden">Ютуб</span></a>
-              </li>
-            </ul>
-          </div>
-          <a class="page-footer__developer-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
-        </footer>
-      </div>
-    </body>
-  </html>
+      </main>
+      <footer class="page-footer">
+        <p class="page-footer__hashtag">#visitsedona</p>
+        <div class="page-footer__link social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="#"><span class="visually-hidden">Твиттер</span></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#"><span class="visually-hidden">Фейсбук</span></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="#"><span class="visually-hidden">Ютуб</span></a>
+            </li>
+          </ul>
+        </div>
+        <a class="page-footer__developer-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
+      </footer>
+    </div>
+  </body>
+</html>

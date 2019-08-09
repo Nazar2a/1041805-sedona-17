@@ -1,8 +1,10 @@
-.service {
+.service__home,
+.service__souvenirs,
+.service__food {
   position: relative;
 }
 
-.service-wrapper {
+.service {
   margin-top: 21px;
   margin-bottom: 15px;
 }
@@ -19,14 +21,14 @@
 
 .service__description {
   font-size: 14px;
-  line-height: 21px;
+  lifne-height: 21px;
   margin: 0;
   color: #333333;
   padding: 10px 20px 20px 69px;
   text-transform: uppercase;
 }
 
-.service--home .service__title::after {
+.service__home .service__title::after {
   content: "";
   position: absolute;
   top: 1px;
@@ -37,7 +39,7 @@
   background-image: url("../img/icon-house.svg");
 }
 
-.service--souvenirs .service__title::after {
+.service__souvenirs .service__title::after {
   content: "";
   position: absolute;
   top: -1px;
@@ -48,7 +50,7 @@
   background-image: url("../img/icon-gift.svg");
 }
 
-.service--food .service__title::after {
+.service__food .service__title::after {
   content: "";
   position: absolute;
   top: 1px;
@@ -60,12 +62,14 @@
 }
 
 @media (min-width: @tablet-width) {
-  .service-wrapper {
+  .service {
     display: flex;
     justify-content: space-between;
   }
 
-  .service {
+  .service__home,
+  .service__souvenirs,
+  .service__food {
     width: 256px;
   }
 
@@ -85,25 +89,25 @@
     padding-bottom: 46px;
   }
 
-  .service--souvenirs {
+  .service__souvenirs {
     order: 2;
   }
 
-  .service--home .service__title::after {
+  .service__home .service__title::after {
     top: 37px;
     left: 90px;
     width: 75px;
     height: 72px;
   }
 
-  .service--souvenirs .service__title::after {
+  .service__souvenirs .service__title::after {
     top: 35px;
     left: 95px;
     width: 64px;
     height: 75px;
   }
 
-  .service--food .service__title::after {
+  .service__food .service__title::after {
     top: 40px;
     left: 90px;
     width: 77px;
@@ -112,7 +116,9 @@
 }
 
 @media (min-width: @desktop-width) {
-  .service {
+  .service__home,
+  .service__souvenirs,
+  .service__food {
     width: 400px;
   }
 
@@ -121,15 +127,15 @@
     padding-bottom: 65px;
   }
 
-  .service--home .service__title::after {
+  .service__home .service__title::after {
     left: 161px;
   }
 
-  .service--souvenirs .service__title::after {
+  .service__souvenirs .service__title::after {
     left: 168px;
   }
 
-  .service--food .service__title::after {
+  .service__food .service__title::after {
     left: 162px;
   }
 }
