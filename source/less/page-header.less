@@ -26,15 +26,15 @@
   background-position: center;
 }
 
-
 .page-header__invitation::after {
   content: "";
   position: absolute;
-  top: 93.5%;
-  width: 326px;
+  left: 0;
+  bottom: 0;
+  width: 320px;
   height: 26px;
   background-image: url("../img/bg-intro-triangle-mobile.svg");
-  background-size: cover;
+  box-shadow: 1px 0 0 #ffffff inset, -1px -1px 0 #ffffff inset;
 }
 
 .page-header__invitation-img {
@@ -54,6 +54,8 @@
 }
 
 .page-header__invitation--photo {
+  background-position: -225px -231px;
+
   .page-header__invitation-img {
     width: 229px;
     height: 39px;
@@ -71,7 +73,7 @@
   .page-header__logo::after {
     content: "";
     position: absolute;
-    top: 1px;
+    top: 0;
     right: 43%;
     width: 102px;
     height: 83px;
@@ -81,20 +83,22 @@
   .page-header__invitation::after {
     content: "";
     position: absolute;
-    top: 89%;
+    top: 462px;
     width: 768px;
     height: 57px;
     background-image: url("../img/bg-intro-triangle-tablet.svg");
+    border-bottom: 2px solid #ffffff;
   }
 
   .page-header__invitation {
     background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
   }
 
   .page-header__invitation-img {
     display: block;
     padding-top: 78px;
-    padding-bottom: 90px;
+    padding-bottom: 91px;
     width: 460px;
     height: 350px;
   }
@@ -110,6 +114,10 @@
     .page-header__invitation::after {
       top: 236px;
     }
+  }
+
+  .page-header__invitation--photo {
+    background-position: right -226px;
   }
 }
 
@@ -147,5 +155,9 @@
     .page-header__invitation::after {
       top: 246px;
     }
+  }
+
+  .page-header__invitation--photo {
+    background-position: right -216px;
   }
 }
