@@ -1,6 +1,6 @@
 .social__list {
   display: flex;
-  margin-left: 83px;
+  margin-left: 81px;
   padding: 0;
 }
 
@@ -16,6 +16,14 @@
   height: 48px;
   background-color: #81b3d2;
   align-items: center;
+}
+
+.social__link:hover {
+  background-color: #669ec0;
+}
+
+.social__link:active {
+  background-color: #5496bd;
 }
 
 .social__link--twitter::after {
@@ -49,4 +57,16 @@
   width: 20px;
   height: 14px;
   background-image: url("../img/icon-youtube.svg");
+}
+
+.social__item:active .social__link--twitter::after,
+.social__item:active .social__link--facebook::after,
+.social__item:active .social__link--youtube::after {
+  opacity: 0.3;
+}
+
+@media (min-width: @tablet-width) {
+  .social__list {
+    margin-left: 85px;
+  }
 }

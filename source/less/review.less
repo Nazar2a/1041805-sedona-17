@@ -1,6 +1,7 @@
 .review__fieldset {
   border: none;
   margin: 20px 0 20px 0;
+  padding: 0;
 }
 
 .review__legend {
@@ -10,15 +11,19 @@
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+  margin-top: 20px;
+}
+
+.review__legend--emotions {
+  margin-top: 18px;
+}
+
+.review__legend--full-name {
+  padding-right: 5px;
 }
 
 .review__list {
   list-style: none;
-}
-
-.review__btn {
-  padding: 17px 25px 17px 25px;
-  margin: 40px 20px 50px 20px;
 }
 
 .review input::-webkit-input-placeholder {
@@ -35,4 +40,35 @@
 
 .review input:-ms-input-placeholder {
   color: #000000;
+}
+
+@media (max-width: @tablet-width) {
+  .review__fieldset {
+    position: relative;
+  }
+
+  .review__legend::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -19px;
+    width: 320px;
+    height: 1px;
+    background-color: #f2f2f2;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .review {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+  }
+
+
+  .review__legend {
+    font-size: 21px;
+    margin-top: 30px;
+  }
 }

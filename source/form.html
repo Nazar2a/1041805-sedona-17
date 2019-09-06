@@ -9,18 +9,18 @@
   <body class="page-body">
     <div class="page-body__wrapper">
       <header class="page-header page-header--photo">
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__button" type="button" aria-label="Открыть меню"></button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
-              <li class="site-list__item site-list__item--active">
+              <li class="site-list__item">
                 <a class="site-list__link" href="index.html">Главная</a>
               </li>
               <li class="site-list__item">
                 <a class="site-list__link" href="photo.html">Фото и видео</a>
               </li>
-              <li class="site-list__item">
-                <a class="site-list__link">Форма отзыва</a>
+              <li class="site-list__item site-list__item--active">
+                <a class="site-list__link site-list__link--active">Форма отзыва</a>
               </li>
               <li class="site-list__item">
                 <a class="site-list__link" href="https://htmlacademy.ru">Html academy</a>
@@ -30,30 +30,30 @@
         </nav>
         <div class="page-header__logo"></div>
         <div class="page-header__invitation page-header__invitation--photo">
-          <img class="page-header__invitation-img" src="img/sedona.svg" width="229" height="39" alt="Sedona">
+          <img class="page-header__invitation-img" src="img/sedona.svg" width="230" height="40" alt="Sedona">
         </div>
       </header>
       <main class="page-main">
         <section class="section section--form">
-          <h1 class="section__title">Оставьте свой отзыв</h1>
-          <p class="section__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          <h1 class="section__title section__title--form">Оставьте свой отзыв</h1>
+          <p class="section__description section__description--form">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
           <form class="review" method="get">
             <fieldset class="review__fieldset full-name">
-              <legend class="review__legend">Представьтесь:</legend>
+              <legend class="review__legend review__legend--full-name">Представьтесь:</legend>
               <ul class="review__list full-name__list">
                 <li class="full-name__item">
                   <label>Имя*:
-                    <input class="full-name__field" type="text" name="name" placeholder="Петр">
+                    <input class="full-name__field full-name__field--name" type="text" name="name" placeholder="Петр">
                   </label>
                 </li>
                 <li class="full-name__item">
                   <label>Фамилия*:
-                    <input class="full-name__field" type="text" name="surname" placeholder="Иванов">
+                    <input class="full-name__field full-name__field--surname" type="text" name="surname" placeholder="Иванов">
                   </label>
                 </li>
                 <li class="full-name__item">
                   <label>Отчество:
-                    <input class="full-name__field" type="text" name="patronymic" placeholder="Александрович">
+                    <input class="full-name__field full-name__field--middle-name" type="text" name="patronymic" placeholder="Александрович">
                   </label>
                 </li>
               </ul>
@@ -62,7 +62,7 @@
               <legend class="review__legend">Контактная информация:</legend>
               <ul class="review__list contact-information__list">
                 <li class="contact-information__item">
-                  <label for="phone">Контактный телефон*:</label>
+                  <label for="phone"><span class="contact-information__phone-span">Контактный </span>телефон*:</label>
                   <input class="contact-information__phone" id="phone" type="text" name="phone" placeholder="Введите телефон">
                 </li>
                 <li class="contact-information__item">
@@ -76,19 +76,22 @@
               <ul class="review__list your-impression__list">
                 <li class="your-impression__item">
                   <label>
-                    <input class="your-impression__choice" type="radio" name="impression" value="Скорее положительное" checked>
+                    <input class="visually-hidden your-impression__choice" type="radio" name="impression" value="Скорее положительное" checked>
+                    <span class="your-impression__check"></span>
                     Скорее положительное
                   </label>
                 </li>
                 <li class="your-impression__item">
                   <label>
-                    <input class="your-impression__choice" type="radio" name="impression" value="Скорее отрицательное">
+                    <input class="visually-hidden your-impression__choice" type="radio" name="impression" value="Скорее отрицательное">
+                    <span class="your-impression__check"></span>
                     Скорее отрицательное
                   </label>
                 </li>
                 <li class="your-impression__item">
                   <label>
-                    <input class="your-impression__choice" type="radio" name="impression" value="Затрудняюсь ответить">
+                    <input class="visually-hidden your-impression__choice" type="radio" name="impression" value="Затрудняюсь ответить">
+                    <span class="your-impression__check"></span>
                     Затрудняюсь ответить
                   </label>
                 </li>
@@ -99,39 +102,43 @@
               <ul class="review__list visited-sights__list">
                 <li class="visited-sights__item">
                   <label>
-                    <input class="visited-sights__choice" type="checkbox" name="sights" value="Мост Дьявола" checked>
+                    <input class="visually-hidden visited-sights__choice" type="checkbox" name="sights" value="Мост Дьявола" checked>
+                    <span class="visited-sights__check"></span>
                     Мост Дьявола
                   </label>
                 </li>
                 <li class="visited-sights__item">
                   <label>
-                    <input class="visited-sights__choice" type="checkbox" name="sights" value="Гора-Колокол" checked>
+                    <input class="visually-hidden visited-sights__choice" type="checkbox" name="sights" value="Гора-Колокол" checked>
+                    <span class="visited-sights__check"></span>
                     Гора-Колокол
                   </label>
                 </li>
                 <li class="visited-sights__item">
                   <label>
-                    <input class="visited-sights__choice" type="checkbox" name="sights"   value="Слайд-парк" checked>
+                    <input class="visually-hidden visited-sights__choice" type="checkbox" name="sights"   value="Слайд-парк" checked>
+                    <span class="visited-sights__check"></span>
                     Слайд-парк
                   </label>
                 </li>
                 <li class="visited-sights__item">
                   <label>
-                    <input class="visited-sights__choice" type="checkbox" name="sights" value="Красные скалы">
+                    <input class="visually-hidden visited-sights__choice" type="checkbox" name="sights" value="Красные скалы">
+                    <span class="visited-sights__check"></span>
                     Красные скалы
                   </label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="review__fieldset your-emotions">
-              <legend class="review__legend">Опишите свои эмоции:</legend>
-              <input class="your-emotions__text" type="text" name="your emotions" value="Опишите подробно все свои восторги ">
+              <legend class="review__legend your-emotions__legend">Опишите свои эмоции:</legend>
+              <textarea class="your-emotions__text" name="your emotions" placeholder="Опишите подробно все свои восторги"></textarea>
             </fieldset>
-            <button class="btn review__btn" type="submit">Отправить отзыв</button>
+            <button class="btn btn--review" type="submit">Отправить отзыв</button>
           </form>
         </section>
       </main>
-      <footer class="page-footer">
+      <footer class="page-footer page-footer--form">
         <p class="page-footer__hashtag">#visitsedona</p>
         <div class="page-footer__link social">
           <ul class="social__list">
@@ -146,8 +153,25 @@
             </li>
           </ul>
         </div>
-        <a class="page-footer__developer-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
+        <a class="page-footer__developer-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано
+          <svg class="page-footer__logo-academy" xmlns="http://www.w3.org/2000/svg" width="42" height="44" viewBox="0 0 60 60"><path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
+        </a>
       </footer>
+
+      <section class="section section--modal-error">
+        <h2 class="section__title section__title--modal-error">Что-то пошло не так!</h2>
+        <p class="section__description section__description--modal-error">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="btn btn--modal-error" type="button">Ок</button>
+      </section>
+
+      <section class="section section--modal-review">
+        <h2 class="section__title section__title--modal-review">Ваш отзыв отправлен!
+        </h2>
+        <p class="section__description section__description--modal-review">Спасибо за ваше участие, ваш отзыв уже поступил к нам. <br>В ближайшее время мы опубликуем его на сайте.</p>
+        <div class="btn__wrapper btn__wrapper--modal-review">
+          <button class="btn btn--modal-review" type="button">Закрыть окно</button>
+        </div>
+      </section>
     </div>
     <script src="js/script.js"></script>
   </body>
