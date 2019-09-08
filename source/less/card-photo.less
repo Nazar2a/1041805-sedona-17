@@ -33,7 +33,7 @@
   position: absolute;
   bottom: 4px;
   left: -35px;
-  width: 22px;
+  width: 21px;
   height: 21px;
   background-image: url("../img/icon-like.svg");
   background-repead: no-repead;
@@ -123,5 +123,10 @@
   .card-photo__description--first {
     top: 320px;
     width: 1200px;
+  }
+
+  .card-photo__like::after {
+    filter: brightness(0) invert(1);
+    opacity: 1;
   }
 }

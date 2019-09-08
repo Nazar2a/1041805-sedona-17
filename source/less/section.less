@@ -50,7 +50,8 @@
   .section__title {
     font-size: 21px;
     margin-top: 28px;
-    margin-bottom: 21px;
+    margin-bottom: 19px;
+    min-width: 26px;
   }
 
   .section__description {
@@ -67,7 +68,7 @@
   content: "";
   position: absolute;
   bottom: 26%;
-  left: 49%;
+  left: 144px;
   width: 27px;
   height: 27px;
   background-image: url("../img/icon-map-marker.svg");
@@ -139,7 +140,8 @@
     .section__title {
       font-size: 30px;
       margin-top: 56px;
-      margin-bottom: 33px;
+      margin-bottom: 32px;
+      min-width: 26px;
     }
 
     .section__description {
@@ -240,6 +242,11 @@
     margin: 0 auto;
     margin-bottom: 32px;
   }
+
+  .section--hotel-search::after {
+    bottom: 26%;
+    left: 369px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -249,7 +256,7 @@
 
   .section--hotel-search {
     .section__title {
-      margin-bottom: 29px;
+      margin-bottom: 32px;
     }
 
     .section__description {
@@ -294,5 +301,9 @@
 
   .section--modal-error {
     margin-left: 400px;
+  }
+
+  .section--hotel-search::after {
+    left: 49%;
   }
 }

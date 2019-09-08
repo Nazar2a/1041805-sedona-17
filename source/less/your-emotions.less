@@ -1,10 +1,10 @@
 .your-emotions {
-  margin-top: 10px;
+  margin-top: 12px;
   position: relative;
 }
 
 .your-emotions__legend {
-  margin-top: 10px;
+  display: block;
 }
 
 .your-emotions__text {
@@ -26,10 +26,40 @@
   padding-top: 16px;
 }
 
+.your-emotions__text::-moz-placeholder {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+  color: #000000;
+  display: block;
+  padding-left: 20px;
+  padding-top: 16px;
+}
+
+.your-emotions__text:-moz-placeholder {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+  color: #000000;
+  display: block;
+  padding-left: 20px;
+  padding-top: 16px;
+}
+
+.your-emotions__text:-ms-input-placeholder {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+  color: #000000;
+  display: block;
+  padding-left: 20px;
+  padding-top: 16px;
+}
+
 @media (min-width: @tablet-width) {
   .your-emotions {
     width: 668px;
-    margin-top: 8px;
+    margin-top: 21px;
   }
 
   .your-emotions__legend {
@@ -68,7 +98,7 @@
 @media (min-width: @desktop-width) {
   .your-emotions {
     width: 962px;
-    margin-top: 6px;
+    margin-top: 20px;
     margin-bottom: 16px;
   }
 
@@ -79,7 +109,7 @@
   }
 
   .your-emotions__legend {
-    text-align: center;
+    padding-left: 145px;
   }
 
   .your-emotions__legend::after {

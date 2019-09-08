@@ -1,11 +1,12 @@
 .contact-information {
   margin-top: 22px;
+  min-height: 258px;
 }
 
 .contact-information__list {
   padding: 0;
   margin-left: 20px;
-  margin-top: 22px;
+  margin-top: 20px;
 }
 
 .contact-information__item {
@@ -20,7 +21,6 @@
     margin: 12px 0 6px 22px;
   }
 }
-
 
 .contact-information__item::after {
   content: "";
@@ -58,6 +58,28 @@
 
 .contact-information__phone::-webkit-input-placeholder,
 .contact-information__email::-webkit-input-placeholder {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+
+.contact-information__phone::-moz-placeholder,
+.contact-information__email::-moz-placeholder {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.contact-information__phone:-moz-placeholder,
+.contact-information__email:-moz-placeholder {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.contact-information__phone:-ms-input-placeholder,
+.contact-information__email:-ms-input-placeholder {
   font-size: 18px;
   font-weight: bold;
   line-height: 26px;
@@ -117,6 +139,7 @@
   .contact-information {
     min-width: 962px;
     margin-top: 25px;
+    min-height: 0;
   }
 
   .contact-information__list {
