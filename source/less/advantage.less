@@ -50,22 +50,19 @@
   .advantage__number {
     padding: 5px 20px 5px 20px;
   }
-
-  .advantage__description {
-    padding: 10px 20px 40px 20px;
-  }
 }
 
-.advantage--god-city {
-  .advantage__title {
-    padding: 41px 20px 4px 20px;
-  }
+.advantage__description--god-city,
+.advantage__description--bridge {
+  padding: 10px 20px 40px 20px;
 }
 
-.advantage--bridge {
-  .advantage__title {
-    padding: 38px 20px 4px 20px;
-  }
+.advantage__title--god-city {
+  padding: 41px 20px 4px 20px;
+}
+
+.advantage__title--bridge {
+  padding: 38px 20px 4px 20px;
 }
 
 @media (max-width: @tablet-width) {
@@ -88,16 +85,30 @@
   .advantage--square,
   .advantage--road {
     position: relative;
+  }
 
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: -1px;
-      left: 20px;
-      width: 280px;
-      height: 1px;
-      border-bottom: 1px solid #d7d7d7;
-    }
+  .advantage--road::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 20px;
+    width: 280px;
+    height: 1px;
+    border-bottom: 1px solid #d7d7d7;
+  }
+
+  .advantage--square::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    width: 280px;
+    height: 1px;
+    border-bottom: 1px solid #d7d7d7;
+  }
+
+  .advantage__br-bridge {
+    display: none;
   }
 }
 
@@ -121,8 +132,13 @@
 }
 
 @media (min-width: @tablet-width) {
+  .advantage {
+    min-height: 256px;
+  }
+
   .advantage__wrapper {
     width: 256px;
+    min-height: 256px;
   }
 
   .advantage__title {
@@ -152,19 +168,21 @@
     justify-content: space-between;
     align-items: flex-start;
 
-    .advantage__title {
-      width: 151px;
-      padding: 44px 20px 4px 20px;
-    }
-
     .advantage__number {
       padding: 9px 20px 5px 20px;
     }
+  }
 
-    .advantage__description {
-      width: 166px;
-      padding: 16px 20px 44px 20px;
-    }
+  .advantage__title--god-city,
+  .advantage__title--bridge {
+    width: 154px;
+    padding: 44px 20px 4px 20px;
+  }
+
+  .advantage__description--god-city,
+  .advantage__description--bridge {
+    width: 166px;
+    padding: 16px 20px 40px 20px;
   }
 
   .advantage__img {
@@ -207,9 +225,10 @@
     width: 256px;
 
     .advantage__title {
-      width: 160px;
+      width: 159px;
       text-align: center;
-      padding: 43px 40px 4px 40px;
+      padding: 45px 40px 3px 40px;
+      min-width: 52px;
     }
 
     .advantage__number {
@@ -218,7 +237,7 @@
 
     .advantage__description {
       width: 160px;
-      padding: 11px 35px 43px 35px;
+      padding: 11px 35px 42px 35px;
     }
   }
 
@@ -238,22 +257,19 @@
     margin-top: 48px;
   }
 
-  .advantage--god-city,
-  .advantage--bridge {
-    .advantage__title {
-      padding: 51px 20px 5px 20px;
-    }
-
-    .advantage__description {
-      width: 270px;
-      padding: 16px 20px 57px 20px;
-    }
+  .advantage__title--god-city,
+  .advantage__title--bridge {
+    padding: 51px 20px 5px 20px;
   }
 
-  .advantage--bridge {
-    .advantage__description {
-      width: 230px;
-    }
+  .advantage__description--god-city {
+    width: 270px;
+    padding: 16px 20px 40px 20px;
+  }
+
+  .advantage__description--bridge {
+    width: 230px;
+    padding: 16px 20px 40px 20px;
   }
 
   .advantage__img--god-city {
@@ -283,7 +299,7 @@
 
     .advantage__description {
       width: 283px;
-      padding: 13px 35px 65px 35px;
+      padding: 13px 35px 60px 35px;
     }
   }
 

@@ -6,7 +6,7 @@
 
 .service {
   margin-top: 25px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .service__title {
@@ -28,6 +28,12 @@
 
   br {
     display: none;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .service {
+    min-height: 375px;
   }
 }
 
@@ -75,6 +81,11 @@
   .service__souvenirs,
   .service__food {
     width: 256px;
+    min-height: 289px;
+  }
+
+  .service__home {
+    margin-top: 0;
   }
 
   .service__title {
@@ -96,7 +107,7 @@
     padding: 0;
     margin: 0 auto;
     padding-top: 17px;
-    padding-bottom: 45px;
+    padding-bottom: 44px;
   }
 
   .service__souvenirs {

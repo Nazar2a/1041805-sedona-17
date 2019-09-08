@@ -1,6 +1,71 @@
+.your-impression {
+  margin-top: 30px;
+}
+
 .your-impression__item {
   font-size: 18px;
   line-height: 26px;
   color: #000000;
   font-weight: bold;
+  margin: 29px 0 13px 0;
+  padding: 7px 10px 8px 58px;
+  position: relative;
+}
+
+.your-impression__choice:checked + .your-impression__check::after {
+  position: absolute;
+  content: "";
+  top: 11px;
+  left: -2px;
+  width: 20px;
+  height: 20px;
+  background-color: #333333;
+  border-radius: 50%;
+}
+
+.your-impression__item label::before {
+  position: absolute;
+  content: "";
+  left: -18px;
+  bottom: -8px;
+  width: 54px;
+  height: 54px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+}
+
+.your-impression__item label:hover::before {
+  background-color: #e5e5e5;
+}
+
+.your-impression__item label:active::before {
+  background-color: #d5d5d5;
+}
+
+@media (min-width: @tablet-width) {
+  .your-impression {
+    order: -2;
+    margin-top: 72px;
+    margin-left: 9px;
+  }
+
+  .your-impression__list {
+    margin-top: 68px;
+    padding-left: 20px;
+  }
+
+  .your-impression__item {
+    margin-top: 37px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .your-impression {
+    margin-top: 57px;
+    margin-left: 4px;
+
+    .review__legend {
+      padding-left: 78px;
+    }
+  }
 }

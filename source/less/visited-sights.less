@@ -1,6 +1,138 @@
+.visited-sights {
+  margin-top: 37px;
+  margin-bottom: 0;
+  min-height: 395px;
+}
+
 .visited-sights__item {
   font-size: 18px;
   line-height: 26px;
   color: #000000;
   font-weight: bold;
+  padding: 10px 10px 10px 58px;
+  margin: 19px 10px 35px 0;
+  position: relative;
+}
+
+.visited-sights__item:last-child {
+  margin-bottom: 25px;
+}
+
+.visited-sights__choice:checked + .visited-sights__check::after {
+  position: absolute;
+  content: "";
+  top: 16px;
+  left: -3px;
+  width: 24px;
+  height: 16px;
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+}
+
+.visited-sights__item label::before {
+  position: absolute;
+  content: "";
+  left: -19px;
+  bottom: -7px;
+  width: 55px;
+  height: 55px;
+  background-color: #f2f2f2;
+  border-radius: 10%;
+}
+
+.visited-sights__item label:hover::before {
+  background-color: #e5e5e5;
+}
+
+.visited-sights__item label:active::before {
+  background-color: #d5d5d5;
+}
+
+@media (min-width: @tablet-width) {
+  .visited-sights {
+    min-width: 664px;
+    min-height: 0;
+    margin-top: 15px;
+    position: relative;
+
+    .review__legend {
+      width: 290px;
+    }
+  }
+
+  .visited-sights__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 550px;
+    margin-top: 38px;
+    margin-left: 100px;
+    padding-left: 0;
+    margin-right: 5px;
+  }
+
+  .visited-sights__list::after {
+    content: "";
+    position: absolute;
+    top: 26px;
+    left: 10px;
+    width: 125px;
+    height: 1px;
+    background-color: #f2f2f2;
+  }
+
+  .visited-sights__list::before {
+    content: "";
+    position: absolute;
+    top: 26px;
+    right: 5px;
+    width: 125px;
+    height: 1px;
+    background-color: #f2f2f2;
+  }
+
+  .visited-sights__item {
+    width: 150px;
+    margin-left: 28px;
+    margin-top: 9px;
+    padding-left: 58px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .visited-sights {
+    width: 980px;
+  }
+
+  .visited-sights__list {
+    margin-left: 20px;
+    margin-right: 0;
+    width: 975px;
+    justify-content: space-between;
+  }
+
+  .visited-sights__item {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 9px;
+    padding-left: 60px;
+  }
+
+  .visited-sights__item:nth-child(1) {
+    margin-right: 24px;
+  }
+
+  .visited-sights__item:nth-child(2) {
+    margin-right: 26px;
+  }
+
+
+  .visited-sights__list::after {
+    left: 3px;
+    width: 277px;
+  }
+
+  .visited-sights__list::before {
+    right: 0;
+    width: 280px;
+  }
 }

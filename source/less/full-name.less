@@ -3,7 +3,7 @@
   line-height: 26px;
   text-transform: uppercase;
   margin-bottom: 20px;
-  margin-left: 10px;
+  margin-left: 20px;
   margin-right: 20px;
 }
 
@@ -13,15 +13,122 @@
 
 .full-name__list {
   padding: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .full-name__field {
-  width: 0.718%;
   box-sizing: border-box;
   border: none;
   color: #000000;
   font-weight: bold;
   background-color: #f2f2f2;
-  padding: 17px 20px 17px 20px;
+  padding: 17px 20px 16px 20px;
   margin-left: 12px;
+}
+
+.full-name__field:hover {
+  background-color: #e5e5e5;
+}
+
+.full-name__field:focus {
+  background-color: #ffffff;
+  box-shadow: inset 0 0 0 4px #e5e5e5;
+  outline: none;
+}
+
+.full-name__field::-webkit-input-placeholder {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.full-name__field::-moz-placeholder {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.full-name__field:-moz-placeholder {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.full-name__field:-ms-input-placeholder {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.full-name__field--name {
+  width: 227px;
+}
+
+.full-name__field--surname {
+  width: 190px;
+}
+
+.full-name__field--middle-name {
+  width: 195px;
+}
+
+@media (min-width: @tablet-width) {
+  .full-name {
+    margin-top: 72px;
+    margin-left: 50px;
+
+    .review__legend {
+      text-align: left;
+      margin-left: 42px;
+    }
+  }
+
+  .full-name__item {
+    margin-left: 43px;
+    margin-right: 0;
+  }
+
+  .full-name__list {
+    margin-top: 59px;
+  }
+
+  .full-name__field--name {
+    width: 216px;
+  }
+
+  .full-name__field--surname {
+    width: 178px;
+  }
+
+  .full-name__field--middle-name {
+    width: 180px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .full-name {
+    width: 430px;
+    margin: 57px 0 20px 0;
+
+    .review__legend {
+      margin-left: 29px;
+    }
+  }
+
+  .full-name__item {
+    margin-left: 27px;
+  }
+
+  .full-name__field--name {
+    width: 350px;
+  }
+
+  .full-name__field--surname {
+    width: 312px;
+  }
+
+  .full-name__field--middle-name {
+    width: 314px;
+  }
 }
