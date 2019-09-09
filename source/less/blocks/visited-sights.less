@@ -14,8 +14,10 @@
   position: relative;
 }
 
-.visited-sights__item:last-child {
-  margin-bottom: 25px;
+@media (max-width: @tablet-width) {
+  .visited-sights__item:last-child {
+    margin-bottom: 25px;
+  }
 }
 
 .visited-sights__choice:checked + .visited-sights__check::after {
@@ -68,26 +70,6 @@
     margin-left: 100px;
     padding-left: 0;
     margin-right: 5px;
-  }
-
-  .visited-sights__list::after {
-    content: "";
-    position: absolute;
-    top: 26px;
-    left: 10px;
-    width: 125px;
-    height: 1px;
-    background-color: #f2f2f2;
-  }
-
-  .visited-sights__list::before {
-    content: "";
-    position: absolute;
-    top: 26px;
-    right: 5px;
-    width: 125px;
-    height: 1px;
-    background-color: #f2f2f2;
   }
 
   .visited-sights__item {

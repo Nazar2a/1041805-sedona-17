@@ -16,6 +16,10 @@
   margin: 0;
 }
 
+.advantage__description {
+  min-height: 42px;
+}
+
 .advantage__img {
   min-height: 260px;
   background-repeat: no-repeat;
@@ -117,11 +121,6 @@
 .advantage--tourists {
   background-color: #efefef;
 
-  .advantage__title {
-    color: #000000;
-    padding: 27px 40px 4px 40px;
-  }
-
   .advantage__number {
     padding: 6px 10px 9px 10px;
   }
@@ -129,6 +128,13 @@
   .advantage__description {
     padding: 6px 35px 27px 35px;
   }
+}
+
+.advantage__title--square,
+.advantage__title--road,
+.advantage__title--tourists {
+  color: #000000;
+  padding: 27px 40px 4px 40px;
 }
 
 @media (min-width: @tablet-width) {
@@ -214,22 +220,10 @@
     }
   }
 
-  .advantage__without-img-wrapper {
-    display: flex;
-    justify-content: space-between;
-  }
-
   .advantage--square,
   .advantage--road,
   .advantage--tourists {
     width: 256px;
-
-    .advantage__title {
-      width: 159px;
-      text-align: center;
-      padding: 45px 40px 3px 40px;
-      min-width: 52px;
-    }
 
     .advantage__number {
       padding: 8px 10px 10px 10px;
@@ -239,6 +233,21 @@
       width: 160px;
       padding: 11px 35px 42px 35px;
     }
+  }
+
+  .advantage__title--square,
+  .advantage__title--road {
+    width: 159px;
+    text-align: center;
+    padding: 45px 40px 3px 40px;
+    min-width: 52px;
+  }
+
+  .advantage__title--tourists {
+    width: 150px;
+    text-align: center;
+    padding: 45px 40px 3px 40px;
+    min-width: 52px;
   }
 
   .advantage--road {
@@ -305,7 +314,16 @@
 
   .advantage--road {
     .advantage__description {
-      width: 280px;
+      width: 275px;
     }
+  }
+
+  .advantage__title--square,
+  .advantage__title--road {
+    padding: 43px 40px 3px 40px;
+  }
+
+  .advantage__title--tourists {
+    padding: 43px 40px 3px 40px;
   }
 }

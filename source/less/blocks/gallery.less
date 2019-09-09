@@ -1,11 +1,24 @@
 .gallery__list {
   list-style: none;
   padding: 0;
-  margin: 30px 20px 49px 20px;
+  margin: 30px 20px 31px 20px;
 }
 
 .gallery__item {
-  margin-bottom: 17px;
+  padding-bottom: 17px;
+  position: relative;
+}
+
+@media (max-width: @tablet-width) {
+  .card-photo::after {
+    content: "";
+    position: absolute;
+    right: -20px;
+    bottom: 2px;
+    width: 320px;
+    height: 1px;
+    background-color: #f2f2f2;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -19,6 +32,7 @@
     .gallery__item {
       width: 324px;
       margin-bottom: 0;
+      padding-bottom: 0;
     }
 
     .gallery__item:first-child {
@@ -29,7 +43,7 @@
 
 @media (min-width: @desktop-width) {
   .gallery__list {
-    margin-top: 70px;
+    margin-top: 71px;
 
     .gallery__item {
       width: 400px;

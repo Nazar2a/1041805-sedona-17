@@ -25,10 +25,16 @@
   color: #333333;
   padding: 10px 20px 19px 69px;
   text-transform: uppercase;
+  min-height: 42px;
 
   br {
     display: none;
   }
+}
+
+.service__description--home,
+.service__description--food {
+  min-height: 63px;
 }
 
 @media (max-width: @tablet-width) {
@@ -139,7 +145,7 @@
 @media (min-width: @desktop-width) {
   .service {
     margin-top: 23px;
-    margin-bottom: 17px;
+    margin-bottom: 0;
   }
 
   .service__home,
@@ -156,7 +162,7 @@
 
   .service__description {
     width: 288px;
-    padding-bottom: 65px;
+    padding-bottom: 61px;
     padding-top: 18px;
 
     br {
