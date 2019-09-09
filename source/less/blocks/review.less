@@ -1,0 +1,198 @@
+.review__fieldset {
+  border: none;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.review__legend {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0 auto;
+}
+
+.review__legend--emotions {
+  margin-top: 18px;
+}
+
+.review__legend--full-name {
+  padding-right: 5px;
+}
+
+.review__list {
+  list-style: none;
+}
+
+.review input::-webkit-input-placeholder {
+  color: #000000;
+}
+
+.review input::-moz-placeholder {
+  color: #000000;
+}
+
+.review input:-moz-placeholder {
+  color: #000000;
+}
+
+.review input:-ms-input-placeholder {
+  color: #000000;
+}
+
+@media (max-width: @tablet-width) {
+  .review__legend--full-name {
+    padding-top: 20px;
+  }
+
+  .review__fieldset {
+    position: relative;
+  }
+
+  .review__legend--full-name::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 300px;
+    width: 320px;
+    height: 1px;
+    background-color: #f2f2f2;
+  }
+
+  .review__legend--contact-information::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 276px;
+    width: 320px;
+    height: 1px;
+    background-color: #f2f2f2;
+  }
+
+  .review__legend--your-impression::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 269px;
+    width: 320px;
+    height: 1px;
+    background-color: #f2f2f2;
+  }
+
+  .review__legend--visited-sights::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 411px;
+    width: 320px;
+    height: 1px;
+    background-color: #f2f2f2;
+  }
+
+  .your-emotions__legend::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 244px;
+    width: 320px;
+    height: 1px;
+    background-color: #f2f2f2;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .review {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .review__legend {
+    font-size: 21px;
+  }
+
+  .review__legend--your-impression::after {
+    content: "";
+    position: absolute;
+    left: 334px;
+    top: 78px;
+    width: 1px;
+    height: 292px;
+    background-color: #f2f2f2;
+  }
+
+  .review__legend--contact-information::after {
+    content: "";
+    position: absolute;
+    bottom: 258px;
+    left: 10px;
+    width: 125px;
+    height: 1px;
+    background-color: #f2f2f2;
+  }
+
+  .review__legend--contact-information::before {
+    content: "";
+    position: absolute;
+    bottom: 258px;
+    right: 5px;
+    width: 125px;
+    height: 1px;
+    background-color: #f2f2f2;
+  }
+
+  .review__legend--visited-sights::after {
+    content: "";
+    position: absolute;
+    bottom: 257px;
+    left: 10px;
+    width: 125px;
+    height: 1px;
+    background-color: #f2f2f2;
+  }
+
+  .review__legend--visited-sights::before {
+    content: "";
+    position: absolute;
+    bottom: 257px;
+    right: 5px;
+    width: 125px;
+    height: 1px;
+    background-color: #f2f2f2;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .review__legend--your-impression::after {
+    left: 481px;
+    top: 64px;
+  }
+
+  .review__legend--contact-information::after {
+    bottom: 162px;
+    left: 1px;
+    width: 279px;
+  }
+
+  .review__legend--contact-information::before {
+    bottom: 162px;
+    right: 1px;
+    width: 279px;
+  }
+
+  .review__legend--visited-sights::after {
+    bottom: 169px;
+    left: 1px;
+    width: 279px;
+  }
+
+  .review__legend--visited-sights::before {
+    bottom: 169px;
+    right: 1px;
+    width: 279px;
+  }
+}
